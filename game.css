@@ -1,0 +1,99 @@
+body{
+  padding-top: 0;
+  background-color: rgb(25, 25, 25);
+  font-family: arial;
+  color: white;
+  margin-left: 20px;
+  
+  
+}
+.space{
+  display: flex;
+  flex: 1;
+}
+.rock-button,
+.scissors-button,
+.paper-button{
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  border-width: 0;
+  background-color: transparent;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+  border: 3px solid white;
+}
+ .rock-button:hover,
+ .scissors-button:hover,
+ .paper-button:hover{
+   background-color: rgb(104, 99, 99);
+}
+  .rock-button:active,
+  .scissors-button:active,
+  .paper-button:active{
+    opacity: 0.4;
+  }
+  .rock-button .tooltip,
+  .paper-button .tooltip,
+  .scissors-button .tooltip{
+   position: absolute;
+   bottom: -20px;
+   right: -5px;
+   left: -5px;
+   color: rgb(194, 186, 186);
+   opacity: 0;
+   pointer-events: none;
+   transition: 2s;
+  }
+  .rock-button:hover .tooltip,
+  .paper-button:hover .tooltip,
+  .scissors-button:hover .tooltip{
+    opacity: 1;
+  }
+ 
+.head{
+  font-size: 30px;
+  color:white;
+  display: flex;
+  font-weight: bold;
+}
+.Rock,
+.Paper,
+.Scissors{
+  height: 50px;  
+}
+.reset{
+  display: flex;  
+  flex: 1;
+}
+.reset-button{
+  border-width: 0;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.5s;
+  border: none;
+  padding: 8px 15px;
+}
+.reset-button:hover{
+  color: rgb(245, 7, 7);
+}
+.reset-button:active{
+  opacity: 0.1;
+}
+.results{
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.score{
+  margin-top: 60px;
+}
+
